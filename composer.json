@@ -12,8 +12,7 @@
     {
       "name": "sraka1",
       "email": "qy@qy.si"
-    },
-
+    }
   ],
   "require": {
     "php": ">=5.3.2",
