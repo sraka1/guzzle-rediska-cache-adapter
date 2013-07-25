@@ -11,7 +11,7 @@
 
     <testsuites>
         <testsuite name="guzzle-predis-cache-adapter">
-          <directory>./tests/Toad/Guzzle/Tests</directory>
+          <directory>./tests/sraka1/Guzzle/Tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
