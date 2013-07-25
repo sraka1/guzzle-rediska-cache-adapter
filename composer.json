@@ -1,0 +1,29 @@
+{
+  "name": "sraka1/rediska-cache-adapter",
+  "type": "library",
+  "description": "A Guzzle cache adapter for use with Rediska",
+  "keywords": ["Guzzle"],
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Joshua Borton",
+      "email": "digitaltoad@gmail.com"
+    },
+    {
+      "name": "sraka1",
+      "email": "qy@qy.si"
+    },
+
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "guzzle/guzzle": ">=2.0",
+    "rediska/rediska": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "sraka1\\Guzzle\\Tests": "tests/",
+      "sraka1\\Guzzle": "src/"
+    }
+  }
+}
