@@ -2,8 +2,8 @@
 
 namespace sraka1\Guzzle\Extensions;
 
-use \Guzzle\Common\Cache\AbstractCacheAdapter;
-use \Rediska as Cache;
+use Guzzle\Cache\AbstractCacheAdapter;
+use Rediska as Cache;
 
 class RediskaCacheAdapter extends AbstractCacheAdapter
 {
@@ -12,22 +12,22 @@ class RediskaCacheAdapter extends AbstractCacheAdapter
         $this->cache = $cache;
     }
 
-    public function contains($id)
+    public function contains($id, array $options = NULL)
     {
-        return $this->cache->exists($id);
+        return $this->cache->exists($id, $options);
     }
 
-    public function delete($id)
+    public function delete($id, array $options = NULL)
     {
-        return $this->cache->delete($id);
+        return $this->cache->delete($id, $options);
     }
 
-    public function fetch($id)
+    public function fetch($id, array $options = NULL)
     {
-        return $this->cache->get($id);
+        return $this->cache->get($id, $options);
     }
 
-    public function save($id, $data, $lifeTime = false)
+    public function save($id, $data, $lifeTime = false, array $options = NULL)
     {
         if ($lifeTime != false) {
             return $this->cache->setAndExpire($id, $data, $lifeTime);
